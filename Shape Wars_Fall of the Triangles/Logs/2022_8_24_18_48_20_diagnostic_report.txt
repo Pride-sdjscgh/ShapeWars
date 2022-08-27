@@ -1,0 +1,35 @@
+Unity Package Manager Diagnostics (v0.1.8)
+============
+Ran 7 checks
+============
+1 succeeded
+5 failed
+1 did not run
+============
+❌ UPM registry reachable (FAIL)
+Make an HTTP request to the UPM package registry
+>> Cannot connect to 'packages.unity.com:443'. This could be because there is no Internet access or the host is inaccessible due to firewall or proxy settings.
+
+❌ Ping UPM registry (FAIL)
+Measure the latency of the UPM package registry API
+>> No successful pings could be made in 0.016 seconds (30 failed)
+
+❌ Ping UPM download (FAIL)
+Measure the latency of the UPM package download endpoint
+>> No successful pings could be made in 0.016 seconds (30 failed)
+
+❌ UPM registry download speed (FAIL)
+Test the Internet connection using the UPM package registry
+>> Cannot connect to 'download.packages.unity.com:443'. This could be because there is no Internet access or the host is inaccessible due to firewall or proxy settings.
+
+❌ Speedtest.net (FAIL)
+Test the Internet connection using Speedtest.net
+>> Cannot connect to 'www.speedtest.net:443'. This could be because there is no Internet access or the host is inaccessible due to firewall or proxy settings.
+
+✅ HTTP proxy environment variables (PASS)
+Detect whether proxy-related environment variables are set (HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, NO_PROXY, UNITY_PROXYSERVER, UNITY_NOPROXY)
+>> No proxy support has been configured through environment variables.
+
+❓ UPM health check (UNKNOWN)
+Start the UPM process and call its health endpoint
+>> Could not find UPM executable at path 'C:\Program Files\Unity\Hub\Editor\2019.4.40f1\Editor\Data\Resources\PackageManager\Server\UnityPackageManager.exe'
