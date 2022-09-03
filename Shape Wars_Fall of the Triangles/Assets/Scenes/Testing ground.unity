@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 261047301}
   - component: {fileID: 261047303}
   - component: {fileID: 261047302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(0.0, 0.0, -1000.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 319199775}
   - component: {fileID: 319199777}
   - component: {fileID: 319199776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(3000.0, 0.0, 1000.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 343682034}
   - component: {fileID: 343682036}
   - component: {fileID: 343682035}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(2000.0, 0.0, 1000.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 791425961}
   - component: {fileID: 791425963}
   - component: {fileID: 791425962}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(3000.0, 0.0, 0.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 807046956}
   - component: {fileID: 807046958}
   - component: {fileID: 807046957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(3000.0, 0.0, -1000.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 819473037}
   - component: {fileID: 819473039}
   - component: {fileID: 819473038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(1000.0, 0.0, 0.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 906728548}
   - component: {fileID: 906728550}
   - component: {fileID: 906728549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(0.0, 0.0, 0.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -782,7 +782,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.9811321, g: 0.9579922, b: 0.9579922, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -797,7 +797,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 26.991467
+  field of view: 24
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -822,13 +822,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040884979}
-  m_LocalRotation: {x: -0, y: -0.8636708, z: -0, w: 0.5040563}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalRotation: {x: -0.042131964, y: -0, z: -0, w: 0.9991121}
+  m_LocalPosition: {x: -0.15820312, y: 1.3333333, z: 0.13195801}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1634897726}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -119.463005, z: 0}
+  m_LocalEulerAnglesHint: {x: -4.829, y: 0, z: 0}
 --- !u!114 &1040884983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 1053616339}
   - component: {fileID: 1053616341}
   - component: {fileID: 1053616340}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(2000.0, 0.0, -1000.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,7 +930,7 @@ GameObject:
   - component: {fileID: 1080699724}
   - component: {fileID: 1080699726}
   - component: {fileID: 1080699725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(1000.0, 0.0, 1000.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3337,7 +3337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256177550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2176.6, y: 1, z: 706.67}
+  m_LocalPosition: {x: 2176.6, y: -45, z: 706.67}
   m_LocalScale: {x: 38, y: 16, z: 44}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3370,7 +3370,7 @@ Transform:
   m_GameObject: {fileID: 1266211576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2.5, z: 2}
   m_Children: []
   m_Father: {fileID: 1634897726}
   m_RootOrder: 1
@@ -3433,7 +3433,7 @@ GameObject:
   - component: {fileID: 1268986759}
   - component: {fileID: 1268986761}
   - component: {fileID: 1268986760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(1000.0, 0.0, -1000.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3509,7 +3509,7 @@ GameObject:
   - component: {fileID: 1347437413}
   - component: {fileID: 1347437415}
   - component: {fileID: 1347437414}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain_(2000.0, 0.0, 0.0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3606,7 +3606,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -3618,11 +3618,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634897724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2347.1582, y: 10, z: 358.86804}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: 2347.1582, y: 1.58, z: 358.86804}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1040884982}
   - {fileID: 1266211577}
+  - {fileID: 1805087859}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3640,6 +3641,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1634897725}
   speed: 200
+  gravity: -9
+  groundCheck: {fileID: 1805087859}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1797938026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3649,7 +3656,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797938027}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain shit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3681,13 +3688,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1805087858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805087859}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1805087859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805087858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1634897726}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1805987284
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14920
+  m_Name: pb_Mesh14922
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
