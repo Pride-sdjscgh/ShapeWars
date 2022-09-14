@@ -1,12 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class ProjectileGuns : MonoBehaviour
-{
-    public float fireRate = 15f; //THIS AFFECT THE TimebtwShoot
-    
+ {
+    public float fireRate = 20f; //THIS AFFECT THE TimebtwShoot
+    public float bulletSpeed = 100f; 
+
     public ParticleSystem muzzleflash;
    
-    public GameObject Bullet;
+    public Rigidbody Bullet;
     public Transform Muzzle;
     private float nextTimeToFire = 0f;
 
@@ -20,11 +23,14 @@ public class ProjectileGuns : MonoBehaviour
          }
       }
 
+
     void Shoot()
-    {
+     {
        muzzleflash.Play();
 
-       Instantiate(Bullet, Muzzle.position, Muzzle.rotation);
-    }
-  
+        Rigidbody projectileInstance;
+        projectileInstance = Instantiate(Bullet, Muzzle.position, Muzzle.rotation) as Rigidbody;
+        projectileInstance.AddForce(Muzzle.forward * bulletSpeed);
+     }
+     
 }
