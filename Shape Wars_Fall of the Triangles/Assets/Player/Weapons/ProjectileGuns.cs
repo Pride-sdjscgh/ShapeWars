@@ -6,7 +6,6 @@ public class ProjectileGuns : MonoBehaviour
  {
     public float fireRate = 20f; //THIS AFFECT THE TimebtwShoot
     public float bulletSpeed = 100f; 
-
     public ParticleSystem muzzleflash;
    
     public Rigidbody Bullet;
@@ -30,7 +29,7 @@ public class ProjectileGuns : MonoBehaviour
 
         Rigidbody projectileInstance;
         projectileInstance = Instantiate(Bullet, Muzzle.position, Muzzle.rotation) as Rigidbody;
-        projectileInstance.AddForce(Muzzle.forward * bulletSpeed);
+        projectileInstance.AddForce(-Muzzle.forward * bulletSpeed);
      }
      
 }
