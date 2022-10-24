@@ -2,6 +2,8 @@
 
 public class Target : MonoBehaviour
 {
+///////NOTE: This script works with the RaycastShooting///////////
+
    public float health = 100f;
 
    public void TakeDamage (float amount)
