@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class ProjectileGuns : MonoBehaviour
  {
     public float fireRate = 20f; //THIS AFFECT THE TimebtwShoot
     public float bulletSpeed = 100f; 
-    public ParticleSystem muzzleflash;
+    public VisualEffect muzzleflash;
    
     public Rigidbody Bullet;
     public Transform Muzzle;
