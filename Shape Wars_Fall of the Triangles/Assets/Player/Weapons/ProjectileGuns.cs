@@ -7,7 +7,7 @@ public class ProjectileGuns : MonoBehaviour
  {
     public float fireRate = 20f; //THIS AFFECT THE TimebtwShoot
     public float bulletSpeed = 100f; 
-    public VisualEffect muzzleflash;
+    public ParticleSystem muzzleflash;
    
     public Rigidbody Bullet;
     public Transform Muzzle;
