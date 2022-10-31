@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class DestructionofGOaftertime : MonoBehaviour
 {
-   public float lifeTime;
+   public float killTime;
 
    private void Start()
-   {
-      Destroy(gameObject, lifeTime);
+   {  
+      if(this != null)
+      {
+         Destroy(this.gameObject, killTime);
+      }
    }
   
 }
