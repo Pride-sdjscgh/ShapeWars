@@ -19,14 +19,14 @@ public class ProjectileGuns : MonoBehaviour
          if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
          {
             nextTimeToFire = Time.time + 1f / fireRate;
-           Shoot();
+            Shoot();
          }
       }
 
 
     void Shoot()
      {
-       muzzleflash.Play();
+        muzzleflash.Play();
 
         Rigidbody projectileInstance;
         projectileInstance = Instantiate(Bullet, Muzzle.position, Muzzle.rotation) as Rigidbody;

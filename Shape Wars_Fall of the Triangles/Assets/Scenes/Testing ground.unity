@@ -3851,6 +3851,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7371809978403301121, guid: 2c347f2964a3d3c35ab9c89b318b54e0,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371809978403301121, guid: 2c347f2964a3d3c35ab9c89b318b54e0,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7371809978403301125, guid: 2c347f2964a3d3c35ab9c89b318b54e0,
         type: 3}
       propertyPath: m_RootOrder
