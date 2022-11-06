@@ -3,7 +3,8 @@
 using System;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
     //Assingables
     public Transform playerCam;
