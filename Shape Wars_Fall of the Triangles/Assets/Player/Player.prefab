@@ -638,7 +638,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machine Gun
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7485331687143432233, guid: e2418c07853d8374cb5707a0a1c15fe2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e2418c07853d8374cb5707a0a1c15fe2, type: 3}
 --- !u!4 &7230057371324457665 stripped
 Transform:
