@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452af4fff77dab9418d7dac7cf1803fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100000000
+  health: 200
 --- !u!64 &627740670
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452af4fff77dab9418d7dac7cf1803fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100000000
+  health: 300
 --- !u!64 &732051057
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452af4fff77dab9418d7dac7cf1803fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100000000
+  health: 1000
 --- !u!64 &1421157344
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3249,7 +3249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452af4fff77dab9418d7dac7cf1803fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100000000
+  health: 500
 --- !u!64 &1871273109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3534,6 +3534,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 492667376, guid: 75be597f12b13604d92c400f3296a520, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7663255016470749106, guid: 75be597f12b13604d92c400f3296a520,
         type: 3}
       propertyPath: m_RootOrder
@@ -3914,6 +3918,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4987588007005798956, guid: 7fe7572d610aeae47be98d6712b007df,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4987588007005798956, guid: 7fe7572d610aeae47be98d6712b007df,
         type: 3}
       propertyPath: sounds.Array.data[0].pitch
