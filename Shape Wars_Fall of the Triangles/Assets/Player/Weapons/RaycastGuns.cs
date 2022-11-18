@@ -12,7 +12,7 @@ public class RaycastGuns : MonoBehaviour
    public Camera fpsCam;
    public GameObject muzzleflash;
    public GameObject ImpactVFX;
-   public GameObject Muzzle;
+   public Transform Muzzle;
    public AudioSource Audio;
 
 
