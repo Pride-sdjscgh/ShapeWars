@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44979388, g: 0.49702984, b: 0.56042, a: 1}
+  m_IndirectSpecularColor: {r: 0.44979376, g: 0.4970296, b: 0.56041974, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!20 &84211088 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7663255015393218618, guid: 75be597f12b13604d92c400f3296a520,
+    type: 3}
+  m_PrefabInstance: {fileID: 1877314242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &249124730 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1877314244, guid: 75be597f12b13604d92c400f3296a520,
+    type: 3}
+  m_PrefabInstance: {fileID: 1877314242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &365359263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,9 +3546,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 492667376, guid: 75be597f12b13604d92c400f3296a520, type: 3}
-      propertyPath: m_PlayOnAwake
+    - target: {fileID: 4871181773957816277, guid: 75be597f12b13604d92c400f3296a520,
+        type: 3}
+      propertyPath: muzzleflash
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703002456893586959, guid: 75be597f12b13604d92c400f3296a520,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714869847344697016, guid: 75be597f12b13604d92c400f3296a520,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325948922189887618, guid: 75be597f12b13604d92c400f3296a520,
+        type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 249124730}
+    - target: {fileID: 7325948922189887618, guid: 75be597f12b13604d92c400f3296a520,
+        type: 3}
+      propertyPath: fpsCam
+      value: 
+      objectReference: {fileID: 84211088}
+    - target: {fileID: 7325948922189887618, guid: 75be597f12b13604d92c400f3296a520,
+        type: 3}
+      propertyPath: muzzleflash
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7663255016470749106, guid: 75be597f12b13604d92c400f3296a520,
         type: 3}
@@ -3920,13 +3958,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4987588007005798956, guid: 7fe7572d610aeae47be98d6712b007df,
         type: 3}
-      propertyPath: sounds.Array.size
-      value: 0
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b0932c63c0f261c1e8c9c624ed859270, type: 3}
+    - target: {fileID: 4987588007005798956, guid: 7fe7572d610aeae47be98d6712b007df,
+        type: 3}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4987588007005798956, guid: 7fe7572d610aeae47be98d6712b007df,
         type: 3}
       propertyPath: sounds.Array.data[0].pitch
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4987588007005798958, guid: 7fe7572d610aeae47be98d6712b007df,
         type: 3}

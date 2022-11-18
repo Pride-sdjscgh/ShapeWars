@@ -10,8 +10,9 @@ public class RaycastGuns : MonoBehaviour
    public float impactforce = 30f;
 
    public Camera fpsCam;
-   public ParticleSystem muzzleflash;
+   public GameObject muzzleflash;
    public GameObject ImpactVFX;
+   public GameObject Muzzle;
    public AudioSource Audio;
 
 
@@ -29,7 +30,7 @@ public class RaycastGuns : MonoBehaviour
 
    void Shoot()
    {
-      muzzleflash.Play();
+      Instantiate(muzzleflash, Muzzle);
        
       Audio.Play();
 

@@ -6,9 +6,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //Audio
-    public AudioSource Footstep;
-
     //Assingables
     public Transform playerCam;
     public Transform orientation;
@@ -145,7 +142,6 @@ public class PlayerMovement : MonoBehaviour
         //Apply forces to move player
         rb.AddForce(orientation.transform.forward * y * moveSpeed * Time.deltaTime * multiplier * multiplierV);
         rb.AddForce(orientation.transform.right * x * moveSpeed * Time.deltaTime * multiplier);
-        Footstep.Play();
     }
 
     private void Jump() {

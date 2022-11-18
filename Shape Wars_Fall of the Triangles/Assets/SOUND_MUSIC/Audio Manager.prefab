@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: AK
-    clip: {fileID: 8300000, guid: a17b030e02c21d787bc2122207506f9b, type: 3}
+  - name: Theme
+    clip: {fileID: 8300000, guid: b0932c63c0f261c1e8c9c624ed859270, type: 3}
     volume: 1
-    pitch: 0.2
+    pitch: 0
     loop: 0
     source: {fileID: 0}
