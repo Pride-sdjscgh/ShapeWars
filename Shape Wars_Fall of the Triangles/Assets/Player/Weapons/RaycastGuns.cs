@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 using System;
+using System.Collections;
 
 public class RaycastGuns : MonoBehaviour
 {
@@ -9,11 +10,32 @@ public class RaycastGuns : MonoBehaviour
    public float fireRate = 15f; //THIS AFFECT THE TimebtwShoot
    public float impactforce = 30f;
 
+   //Ammo stuff
+   public int maxAmmo = 20;
+   private int currentAmmo;
+   public float reloadTime = 5;
+   private bool isReloding = false;
+
    public Camera fpsCam;
    public GameObject muzzleflash;
    public GameObject ImpactVFX;
    public Transform Muzzle;
    public AudioSource Audio;
+
+   public Animator animator;
+
+   void start()
+   {
+       currentAmmo = maxAmmo;
+       animator.SetBool("Reloading", false);
+   }
+
+   void OnEnable ()
+   {
+     isReloding = false;
+     animator.SetBool("Reloading", true);
+
+   }
 
 
    private float nextTimeToFire = 0f;
@@ -21,6 +43,15 @@ public class RaycastGuns : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
+      if (isReloding)
+          return;
+
+      if (currentAmmo <= 0)
+      {
+        StartCoroutine(Reload());
+          return;
+      }
+
       if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
       {
          nextTimeToFire = Time.time + 1f / fireRate;
@@ -28,11 +59,28 @@ public class RaycastGuns : MonoBehaviour
       }
    }
 
+   IEnumerator Reload ()
+   {
+      isReloding = true;
+      Debug.Log ("Reloading....");
+
+      animator.SetBool("Reloading", true);
+
+      yield return new WaitForSeconds (reloadTime - .25f);
+      animator.SetBool("Reloading", false);
+       yield return new WaitForSeconds (.25f);
+
+      currentAmmo = maxAmmo;
+      isReloding = false;
+   }
+
    void Shoot()
    {
       Instantiate(muzzleflash, Muzzle);
        
       Audio.Play();
+
+      currentAmmo--;
 
       RaycastHit hit;
       if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
