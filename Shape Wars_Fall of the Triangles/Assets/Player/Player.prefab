@@ -691,6 +691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Combat ShotGun Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8799129803055477529, guid: 74d441781867fe3419b0eed4505c9ccc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8799203072963511265, guid: 74d441781867fe3419b0eed4505c9ccc,
         type: 3}
       propertyPath: m_Layer
@@ -754,12 +759,12 @@ PrefabInstance:
     - target: {fileID: 2748069960499564095, guid: a894f979c6997b7eb94c678ed041337b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.02617702
+      value: 0.026177017
       objectReference: {fileID: 0}
     - target: {fileID: 2748069960499564095, guid: a894f979c6997b7eb94c678ed041337b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2748069960499564095, guid: a894f979c6997b7eb94c678ed041337b,
         type: 3}
@@ -769,7 +774,7 @@ PrefabInstance:
     - target: {fileID: 2748069960499564095, guid: a894f979c6997b7eb94c678ed041337b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2748069960499564095, guid: a894f979c6997b7eb94c678ed041337b,
         type: 3}
@@ -804,7 +809,7 @@ PrefabInstance:
     - target: {fileID: 2753490091618363873, guid: a894f979c6997b7eb94c678ed041337b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2753846720457266277, guid: a894f979c6997b7eb94c678ed041337b,
         type: 3}
