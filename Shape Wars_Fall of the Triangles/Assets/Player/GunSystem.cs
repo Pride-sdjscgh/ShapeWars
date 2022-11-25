@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using TMPro;
 
 public class GunSystem : MonoBehaviour
@@ -15,9 +16,10 @@ public class GunSystem : MonoBehaviour
 
     //Reference
     public Camera fpsCam;
-    public Transform attackPoint;
+    public Transform Muzzle;
     public RaycastHit rayHit;
     public LayerMask whatIsEnemy;
+    public AudioSource Audio;
 
     //Graphics
     public GameObject muzzleFlash, bulletHoleGraphic;
@@ -52,6 +54,8 @@ public class GunSystem : MonoBehaviour
     }
     private void Shoot()
     {
+        Audio.Play();
+
         readyToShoot = false;
 
         //Spread
@@ -77,7 +81,7 @@ public class GunSystem : MonoBehaviour
 
         //Graphics
         Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0, 180, 0));
-        Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+        Instantiate(muzzleFlash, Muzzle);
 
         bulletsLeft--;
         bulletsShot--;
