@@ -1122,6 +1122,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 337333067, guid: 75be597f12b13604d92c400f3296a520, type: 3}
+      propertyPath: sensX
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 337333067, guid: 75be597f12b13604d92c400f3296a520, type: 3}
+      propertyPath: sensY
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7663255016470749106, guid: 75be597f12b13604d92c400f3296a520,
         type: 3}
       propertyPath: m_RootOrder
@@ -1182,6 +1190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Test player
       objectReference: {fileID: 0}
+    - target: {fileID: 7922535039915403967, guid: 75be597f12b13604d92c400f3296a520,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1508311072}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75be597f12b13604d92c400f3296a520, type: 3}
 --- !u!43 &340111690
@@ -4165,7 +4178,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -7370,9 +7383,9 @@ RectTransform:
   m_Father: {fileID: 775470059}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -25}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -100, y: 25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508311072
